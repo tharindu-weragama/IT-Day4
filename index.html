@@ -1,274 +1,253 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!--<link rel="stylesheet" href="/Style.css">-->
+    <title>iCET Academy</title>
+    <meta name="description" content="iCET Academy web design and technology learning showcase." />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
 </head>
 
 <body>
-    <!--Card Example-->
-    <!--<div class="container-fluid">
-        <div class="row">
-            <div class="col-1 bg-danger">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#home">iCET Academy</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                    aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#programs">Programs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-1 bg-dark">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-1 bg-body">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-1 bg-danger">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-1 bg-danger">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-1 bg-danger">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-1 bg-danger">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-1 bg-danger">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-1 bg-danger">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-1 bg-danger">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-1 bg-danger">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-1 bg-danger">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
+        </nav>
 
+        <section id="home" class="hero-section d-flex align-items-center text-white">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7" data-aos="fade-right">
+                        <p class="eyebrow text-uppercase">Creative technology learning</p>
+                        <h1 class="display-5 fw-bold">Learn web design, development, and multimedia skills with iCET.
+                        </h1>
+                        <p class="lead">Explore modern layouts, responsive projects, and hands-on training using real
+                            website examples.</p>
+                        <div class="d-flex gap-3 flex-wrap">
+                            <a href="#programs" class="btn btn-primary btn-lg">View Programs</a>
+                            <a href="#contact" class="btn btn-outline-light btn-lg">Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 text-center" data-aos="fade-left">
+                        <img src="IMG/CARD5.jpg" alt="Students working together"
+                            class="img-fluid rounded shadow-lg hero-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
 
-        </div>
-        <h1>Hello, World!</h1>
-    </div>-->
-    <!--Windows Examples responsive-->
+    <main class="pt-5">
+        <section id="about" class="section-light py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6" data-aos="fade-up">
+                        <h2>About iCET Academy</h2>
+                        <p>iCET Academy supports learners in web design, coding, and digital creativity with practical
+                            exercises and real projects. We build confidence through clear examples, useful tools, and a
+                            friendly learning environment.</p>
+                        <ul class="list-unstyled text-secondary">
+                            <li class="mb-2"><strong>Responsive design</strong> for desktop, tablet, and mobile screens.
+                            </li>
+                            <li class="mb-2"><strong>Modern website components</strong> including hero sections, cards,
+                                galleries, and footers.</li>
+                            <li class="mb-2"><strong>Hands-on learning</strong> using Bootstrap, CSS, and real image
+                                assets.</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6" data-aos="zoom-in">
+                        <img src="IMG/CARD3.jpg" alt="About iCET Academy" class="img-fluid rounded shadow-sm">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-3">
-                <img class="img-thumbnail" src="/IMG/CARD2.jpg" alt="">
+        <section id="programs" class="section-white py-5">
+            <div class="container">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <p class="eyebrow text-uppercase text-primary">Programs</p>
+                    <h2>Our Featured Courses</h2>
+                    <p class="text-muted mx-auto" style="max-width: 720px;">Choose a practical path for web design,
+                        programming, or digital media with interactive examples and clear explanations.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4" data-aos="flip-left">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <img src="IMG/CARD1.jpg" class="card-img-top" alt="Web Design" />
+                            <div class="card-body">
+                                <h5 class="card-title">Web Design Basics</h5>
+                                <p class="card-text">Learn modern layouts, responsive grids, navigation, and page
+                                    structure using HTML and CSS.</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0">
+                                <a href="#" class="btn btn-outline-primary">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="flip-left" data-aos-delay="100">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <img src="IMG/CARD2.jpg" class="card-img-top" alt="Coding" />
+                            <div class="card-body">
+                                <h5 class="card-title">Interactive Coding</h5>
+                                <p class="card-text">Build practical web pages with Bootstrap, responsive components,
+                                    and user-friendly visuals.</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0">
+                                <a href="#" class="btn btn-outline-primary">See details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="flip-left" data-aos-delay="200">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <img src="IMG/CARD4.jpg" class="card-img-top" alt="Multimedia" />
+                            <div class="card-body">
+                                <h5 class="card-title">Media & Graphics</h5>
+                                <p class="card-text">Explore image use, layout polish, and presentation techniques for
+                                    stronger websites.</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0">
+                                <a href="#" class="btn btn-outline-primary">Explore now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-4 bg-warning text-black">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio quam aliquam soluta quasi! Facere
-                    necessitatibus iusto atque sed veniam. Quasi magni corporis, quas dolores illo consectetur eum sequi
-                    minima architecto!
-                    Ab necessitatibus ipsum iure consectetur laborum minus. Neque saepe magni, ducimus perspiciatis
-                    eligendi repudiandae. Modi enim at omnis fuga adipisci rem dolore. Libero veniam reiciendis
-                    assumenda vel vitae! Suscipit, itaque!
-                    Eveniet facilis aperiam commodi itaque est, quas accusantium ab deleniti fugit doloribus eligendi
-                    nulla officia esse, ipsa facere nobis eius velit vitae incidunt, sequi error quibusdam modi
-                    voluptatibus id! Eveniet.
-                    Totam, reprehenderit dicta ut consequatur itaque accusamus expedita, labore voluptatibus neque iure
-                    commodi tenetur eius minima harum ea esse doloremque aliquid eaque ullam. Rem, dolore magnam tempora
-                    veniam similique voluptatibus.</p>
-            </div>
-            <div class="col-5 bg-success text-white">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptatum tempora nisi
-                    praesentium fugiat architecto porro consectetur minus assumenda hic distinctio atque dolorem ducimus
-                    tenetur, illum debitis ad sunt culpa?
-                    Cumque, numquam! Dolore blanditiis, enim aspernatur fugit earum provident voluptates voluptate
-                    laboriosam quod sint dolor explicabo doloribus tenetur cum facilis est neque eligendi tempore
-                    exercitationem iste quis a alias. Consequuntur.
-                    Temporibus assumenda, eaque distinctio explicabo sint aperiam provident iure eum rerum, nulla ex
-                    dolorem recusandae facere tempore enim voluptatem atque aliquam nihil corrupti deserunt qui
-                    praesentium a soluta? Quo, quae!
-                    Cum inventore quos architecto laudantium eius officia porro maxime veritatis. Culpa, hic molestias
-                    nihil blanditiis facere inventore, qui omnis ratione accusamus cumque sit nobis explicabo soluta
-                    exercitationem, nisi in nostrum.
-                    Nam, adipisci consectetur? Exercitationem natus, dignissimos nobis, doloribus sint quibusdam rerum
-                    non consectetur placeat ullam iure, minus inventore. Dolores beatae voluptatibus eligendi suscipit
-                    corrupti laboriosam nisi reiciendis asperiores neque commodi.</p>
-            </div>
-        </div>
+        </section>
 
-        <div class="row">
-            <div class="col-3">
-                <img class="img-thumbnail" src="/IMG/CARD1.jpg" alt="">
+        <section id="gallery" class="section-alt py-5">
+            <div class="container">
+                <div class="row align-items-center mb-5">
+                    <div class="col-lg-6" data-aos="fade-right">
+                        <h2>Project Gallery</h2>
+                        <p class="text-muted">See how images and layouts come together in a clean design. This gallery
+                            uses your existing assets to create a polished presentation.</p>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-left">
+                        <div id="imageCarousel" class="carousel slide rounded shadow" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="IMG/CARD1.jpg" class="d-block w-100" alt="Project image 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="IMG/CARD2.jpg" class="d-block w-100" alt="Project image 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="IMG/CARD3.jpg" class="d-block w-100" alt="Project image 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4" data-aos="fade-up">
+                    <div class="col-md-4">
+                        <img src="IMG/CARD1.jpg" alt="Gallery image" class="img-fluid rounded shadow-sm">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="IMG/CARD2.jpg" alt="Gallery image" class="img-fluid rounded shadow-sm">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="IMG/CARD5.jpg" alt="Gallery image" class="img-fluid rounded shadow-sm">
+                    </div>
+                </div>
             </div>
-            <div class="col-4 bg-warning text-black">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio quam aliquam soluta quasi! Facere
-                    necessitatibus iusto atque sed veniam. Quasi magni corporis, quas dolores illo consectetur eum sequi
-                    minima architecto!
-                    Ab necessitatibus ipsum iure consectetur laborum minus. Neque saepe magni, ducimus perspiciatis
-                    eligendi repudiandae. Modi enim at omnis fuga adipisci rem dolore. Libero veniam reiciendis
-                    assumenda vel vitae! Suscipit, itaque!
-                    Eveniet facilis aperiam commodi itaque est, quas accusantium ab deleniti fugit doloribus eligendi
-                    nulla officia esse, ipsa facere nobis eius velit vitae incidunt, sequi error quibusdam modi
-                    voluptatibus id! Eveniet.
-                    Totam, reprehenderit dicta ut consequatur itaque accusamus expedita, labore voluptatibus neque iure
-                    commodi tenetur eius minima harum ea esse doloremque aliquid eaque ullam. Rem, dolore magnam tempora
-                    veniam similique voluptatibus.</p>
-            </div>
-            <div class="col-5 bg-success text-white">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptatum tempora nisi
-                    praesentium fugiat architecto porro consectetur minus assumenda hic distinctio atque dolorem ducimus
-                    tenetur, illum debitis ad sunt culpa?
-                    Cumque, numquam! Dolore blanditiis, enim aspernatur fugit earum provident voluptates voluptate
-                    laboriosam quod sint dolor explicabo doloribus tenetur cum facilis est neque eligendi tempore
-                    exercitationem iste quis a alias. Consequuntur.
-                    Temporibus assumenda, eaque distinctio explicabo sint aperiam provident iure eum rerum, nulla ex
-                    dolorem recusandae facere tempore enim voluptatem atque aliquam nihil corrupti deserunt qui
-                    praesentium a soluta? Quo, quae!
-                    Cum inventore quos architecto laudantium eius officia porro maxime veritatis. Culpa, hic molestias
-                    nihil blanditiis facere inventore, qui omnis ratione accusamus cumque sit nobis explicabo soluta
-                    exercitationem, nisi in nostrum.
-                    Nam, adipisci consectetur? Exercitationem natus, dignissimos nobis, doloribus sint quibusdam rerum
-                    non consectetur placeat ullam iure, minus inventore. Dolores beatae voluptatibus eligendi suscipit
-                    corrupti laboriosam nisi reiciendis asperiores neque commodi.</p>
-            </div>
-        </div>
+        </section>
 
-        <div class="row">
-            <div class="col-3">
-                <img class="img-thumbnail" src="/IMG/CARD3.jpg" alt="">
+        <section id="contact" class="section-white py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6" data-aos="fade-up">
+                        <h2>Get in Touch</h2>
+                        <p>Ready to build a better website? Reach out for guidance, course details, or project support.
+                        </p>
+                        <ul class="contact-list">
+                            <li><strong>Email:</strong> info@icetacademy.example</li>
+                            <li><strong>Phone:</strong> +123 456 7890</li>
+                            <li><strong>Location:</strong> 123 Technology Road, City</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-left">
+                        <div class="card contact-card shadow-sm border-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Contact Form</h5>
+                                <p class="card-text text-muted">Share your learning goals and we’ll connect with you.
+                                </p>
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Name</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Your name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email"
+                                            placeholder="you@example.com">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea class="form-control" id="message" rows="4"
+                                            placeholder="Tell us about your project"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Send Message</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-4 bg-warning text-black">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio quam aliquam soluta quasi! Facere
-                    necessitatibus iusto atque sed veniam. Quasi magni corporis, quas dolores illo consectetur eum sequi
-                    minima architecto!
-                    Ab necessitatibus ipsum iure consectetur laborum minus. Neque saepe magni, ducimus perspiciatis
-                    eligendi repudiandae. Modi enim at omnis fuga adipisci rem dolore. Libero veniam reiciendis
-                    assumenda vel vitae! Suscipit, itaque!
-                    Eveniet facilis aperiam commodi itaque est, quas accusantium ab deleniti fugit doloribus eligendi
-                    nulla officia esse, ipsa facere nobis eius velit vitae incidunt, sequi error quibusdam modi
-                    voluptatibus id! Eveniet.
-                    Totam, reprehenderit dicta ut consequatur itaque accusamus expedita, labore voluptatibus neque iure
-                    commodi tenetur eius minima harum ea esse doloremque aliquid eaque ullam. Rem, dolore magnam tempora
-                    veniam similique voluptatibus.</p>
-            </div>
-            <div class="col-5 bg-success text-white">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptatum tempora nisi
-                    praesentium fugiat architecto porro consectetur minus assumenda hic distinctio atque dolorem ducimus
-                    tenetur, illum debitis ad sunt culpa?
-                    Cumque, numquam! Dolore blanditiis, enim aspernatur fugit earum provident voluptates voluptate
-                    laboriosam quod sint dolor explicabo doloribus tenetur cum facilis est neque eligendi tempore
-                    exercitationem iste quis a alias. Consequuntur.
-                    Temporibus assumenda, eaque distinctio explicabo sint aperiam provident iure eum rerum, nulla ex
-                    dolorem recusandae facere tempore enim voluptatem atque aliquam nihil corrupti deserunt qui
-                    praesentium a soluta? Quo, quae!
-                    Cum inventore quos architecto laudantium eius officia porro maxime veritatis. Culpa, hic molestias
-                    nihil blanditiis facere inventore, qui omnis ratione accusamus cumque sit nobis explicabo soluta
-                    exercitationem, nisi in nostrum.
-                    Nam, adipisci consectetur? Exercitationem natus, dignissimos nobis, doloribus sint quibusdam rerum
-                    non consectetur placeat ullam iure, minus inventore. Dolores beatae voluptatibus eligendi suscipit
-                    corrupti laboriosam nisi reiciendis asperiores neque commodi.</p>
+        </section>
+    </main>
+
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-1">© 2026 iCET Academy</p>
+                    <small class="text-muted">Building modern websites with practical examples and responsive
+                        design.</small>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#home" class="text-white text-decoration-none me-3">Home</a>
+                    <a href="#about" class="text-white text-decoration-none me-3">About</a>
+                    <a href="#contact" class="text-white text-decoration-none">Contact</a>
+                </div>
             </div>
         </div>
-    </div>
+    </footer>
 
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+    </script>
 </body>
 
 </html>
